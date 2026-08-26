@@ -1,16 +1,142 @@
-# React + Vite
+# 🏠 PropertyAI — Smart Property Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> An AI-powered property discovery platform built with React & Firebase, supporting pan-India property search with intelligent matching.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [https://propertyai-a9c15.web.app](https://propertyai-a9c15.web.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🤖 **AI Smart Matching** — Natural language search with weighted scoring algorithm
+- 🔐 **Firebase Authentication** — Secure login & signup with Email/Password
+- ☁️ **Firestore Database** — All data (properties, bookings, users) stored in the cloud
+- 🗺️ **Pan-India Search** — Browse properties across 9+ states with cascading State → City → Location filters
+- ❤️ **Favorites** — Save and manage your favourite properties
+- 📅 **Visit Booking** — Schedule property visits with date/time picker
+- 👤 **User Profile** — Edit profile, view stats, manage settings
+- 🔔 **Notifications** — In-app notification centre
+- 👑 **Admin Dashboard** — Manage properties, users, and visit bookings
+- 📱 **Mobile-First UI** — Glassmorphism design optimised for 360–400px screens
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🏙️ Supported Locations
+
+| State | Cities |
+|-------|--------|
+| Karnataka | Bangalore |
+| Maharashtra | Mumbai, Pune |
+| Telangana | Hyderabad |
+| Tamil Nadu | Chennai |
+| Delhi NCR | Delhi, Gurgaon, Noida |
+| West Bengal | Kolkata |
+| Gujarat | Ahmedabad |
+| Rajasthan | Jaipur |
+| Andhra Pradesh | Vijayawada, Visakhapatnam, Tirupati, Nellore |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React 18, React Router v6 |
+| Build Tool | Vite |
+| Styling | Vanilla CSS, Glassmorphism |
+| Auth | Firebase Authentication |
+| Database | Cloud Firestore |
+| Hosting | Firebase Hosting |
+| AI Matching | Custom weighted scoring engine |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- Firebase project (create one at [console.firebase.google.com](https://console.firebase.google.com))
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/AdilSk7/ai-property-finder.git
+cd ai-property-finder
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Firebase Setup
+
+1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
+2. Enable **Authentication → Email/Password**
+3. Create a **Firestore Database**
+4. Set Firestore rules to allow reads/writes during development
+5. Copy your Firebase config into `src/firebase.js`
+
+```js
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  ...
+};
+```
+
+### Build & Deploy
+
+```bash
+# Build for production
+npm run build
+
+# Deploy to Firebase Hosting
+firebase deploy --only hosting
+```
+
+---
+
+## 👑 Admin Access
+
+To get admin access, sign up with the email:
+```
+admin@propertyfinder.com
+```
+Then go to **Admin Dashboard → 🌱 Seed Data** to populate the database with sample properties.
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/        # Reusable UI components
+├── context/           # AuthContext (Firebase Auth)
+├── data/              # Property data & India location hierarchy
+├── pages/             # All screen components
+│   └── admin/         # Admin-only screens
+├── utils/             # db.js (Firestore), smartMatch.js (AI)
+├── App.jsx            # Routes
+├── firebase.js        # Firebase config
+└── index.css          # Global styles & design tokens
+```
+
+---
+
+## 📸 Screenshots
+
+> Mobile-first glassmorphism UI with dark theme
+
+| Home | Search | Property Detail |
+|------|--------|----------------|
+| Browse featured properties | Filter by State/City/Location | AI match score & amenities |
+
+---
+
+## 📄 License
+
+MIT License © 2026 [AdilSk7](https://github.com/AdilSk7)
