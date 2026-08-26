@@ -100,16 +100,6 @@ firebase deploy --only hosting
 
 ---
 
-## 👑 Admin Access
-
-To get admin access, sign up with the email:
-```
-admin@propertyfinder.com
-```
-Then go to **Admin Dashboard → 🌱 Seed Data** to populate the database with sample properties.
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -124,16 +114,6 @@ src/
 ├── firebase.js        # Firebase config
 └── index.css          # Global styles & design tokens
 ```
-
----
-
-## 📸 Screenshots
-
-> Mobile-first glassmorphism UI with dark theme
-
-| Home | Search | Property Detail |
-|------|--------|----------------|
-| Browse featured properties | Filter by State/City/Location | AI match score & amenities |
 
 ---
 
