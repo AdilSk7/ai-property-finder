@@ -57,19 +57,6 @@
 - Node.js 18+
 - Firebase project (create one at [console.firebase.google.com](https://console.firebase.google.com))
 
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/AdilSk7/ai-property-finder.git
-cd ai-property-finder
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
 
 ### Firebase Setup
 
