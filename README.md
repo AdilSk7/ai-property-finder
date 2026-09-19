@@ -3,7 +3,6 @@
 > An AI-powered property discovery platform built with React & Firebase, supporting pan-India property search with intelligent matching.
 
 🌐 **Live Demo:** [https://propertyai-a9c15.web.app](https://propertyai-a9c15.web.app)
-
 ---
 
 ## ✨ Features
